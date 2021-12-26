@@ -1,0 +1,366 @@
+:root{
+  font-size: 23px;
+  font-family: 'Josefin Sans', sans-serif;
+  --texto-primario: white;
+  --texto-secundario: #575757;
+  --bg-primario:  #E8ECED;
+  --bg-secundario: #e3e3e3;
+}
+
+body{
+  color: #707070;
+  background-color: #E8ECED;
+  margin:0;
+  padding: 0;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+
+body::-webkit-scrollbar{
+  width: 0.25rem;
+
+}
+
+body::-webkit-scrollbar-track{
+  background: #1f1f1f;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #AC9FBB;
+}
+
+main{
+  margin-top: 1rem;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+
+.logo{
+  margin-left: 10vw;
+  margin-right: 5vw;
+  width: 142px;
+  height: 60px;
+  padding: 6px;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #003049;
+  border-top:3px solid #CABAC2;
+  box-shadow: 0px 0.2px 5px 0px rgba(31,31,31,1);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #F7EBEC;
+  text-align: center;
+  padding: 27px 17px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.active {
+  background-color: orange;
+  color: red;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: gray;
+  padding: 27px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: gray;
+  padding: 20px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #272727;
+  color: #AC9FBB;
+}
+
+.topnav a i{
+  font-size: 15px;
+  color: #eca63a;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: #92c477;;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .inputs{
+    width: 27vw !important;
+  }
+
+}
+
+table {
+  border-collapse: collapse;
+  color: #c94747;
+  font-family: monospace;
+  font-size: 25px;
+  text-align: left;
+  margin: 15px;
+
+}
+th {
+  background-color: #E0E0E0;
+  color: #023C39;
+  text-align: center;
+  font-family: 'Krona One', sans-serif;
+  font-size: 17px;
+}
+
+tr:hover {
+  background: #c9c9c9;
+}
+.textbxinput{
+  padding: 10px;
+  border: 1px solid black;
+  width: 300px;
+  text-align: center;
+  font-family: 'Krona One', sans-serif;
+  font-size: 17px;
+  text-align: center;
+  color: #023C39;
+}
+
+tr:nth-child(odd) {background-color: #D6D6D6}
+
+
+.input-filter {
+  margin: 10px 10px 30px 10px;
+  width: 200px;
+  outline: none;
+  padding: 7px;
+  font-size: 16px;
+}
+.textbx {
+  font-family: 'Krona One', sans-serif;
+  width: 100%;
+  font-size: 17px;
+  text-align: center;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.textbx:hover {
+border-bottom: 1px solid black;
+}
+
+.editartablecell{
+  outline: #EBEBEB;
+  border: none;
+  background: #EBEBEB;
+  text-decoration: none;
+
+
+}
+
+.analisetablecell{
+  font-size: 17px;
+text-align: center;
+  font-family: 'Krona One', sans-serif;
+
+}
+
+
+.chartContainer{
+  margin-top: 14px;
+  margin-left: 55px;
+  margin-right: 10px;
+  height: 30%;
+  width: 45%;
+}
+
+.chartContainer2{
+  margin-top: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 30%;
+  width: 45%;
+
+}
+
+.tdanalise{
+  color: #023C39;
+  font-family: 'Krona One', sans-serif;
+  font-size: 17px;
+  text-align: center;
+  outline: none;
+  border: none;
+  background: none;
+  width: 50px !important;
+  height: 70px !important;
+  text-align: center;
+}
+.tdanaliseheader{
+
+  color: #023C39;
+  font-family: 'Krona One', sans-serif;
+  font-size: 17px;
+
+}
+.tabela-peso{
+  width: 10px;
+}
+.coluna-peso{
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #c94747;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 15px 16px 15px;
+  background-color: #c94747;
+  color: white;
+}
+
+/* krona-one-regular - latin */
+@font-face {
+  font-family: 'Krona One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/krona-one-v9-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('krona-one-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('krona-one-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('krona-one-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('krona-one-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('krona-one-v9-latin-regular.svg#KronaOne') format('svg'); /* Legacy iOS */
+}
